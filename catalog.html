@@ -20,33 +20,32 @@
     </header>
     <main>
         <section>
-            <h3>СТОИМОСТЬ:</h3>
-            <form>
-                <button form="price"><img src="img/ellipse-price.png" width="20" height="20"></button>
-                <button form="price"><img src="img/ellipse-price.png" width="20" height="20"></button>
+            <h3>ФИЛЬТР</h3>
+            <form action="https://echo.htmlacademy.ru/courses" method="get">
+                <fieldset>
+                    <legend>СТОИМОСТЬ:</legend>
+                    <button><img src="img/ellipse-price.png" width="20" height="20"></button>
+                    <button><img src="img/ellipse-price.png" width="20" height="20"></button><br>
+                    <label for="min-number">ОТ</label>
+                    <input type="number" id="min-number" name="min-number" value="0" min="0" max="15000">
+                    <label for="min-number">ДО</label>
+                    <input type="number" id="max-number" name="max-number" value="15000" min="0" max="15000">
+                </fieldset>
+                <fieldset>
+                    <legend>СЕТКА:</legend>
+                    <input type="radio" name="grid" value="adaptive" checked>Адаптивная<br>
+                    <input type="radio" name="grid" value="fixed">Фиксированная<br>
+                    <input type="radio" name="grid" value="rubber">Резиновая<br>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="feature-1" value="slider" checked>Слайдер<br>
+                    <input type="checkbox" name="feature-2" value="block">Блок преимуществ<br>
+                    <input type="checkbox" name="feature-3" value="news" checked>Новости<br>
+                    <input type="checkbox" name="feature-4" value="gallery">Галерея<br>
+                    <input type="checkbox" name="feature-5" value="cart">Корзина<br>
+                </fieldset>
+                <button type="submit">ПОКАЗАТЬ</button>
             </form>
-            <form action="https://echo.htmlacademy.ru/courses" method="post" id="price"></form> 
-            <label for="min-number">ОТ</label>
-            <input type="number" id="min-number" name="min-number" value="0" min="0" max="15000">
-            <label for="min-number">ДО</label>
-            <input type="number" id="max-number" name="max-number" value="15000" min="0" max="15000">
-        <section>
-            <h3>СЕТКА:</h3>
-            <form action="https://echo.htmlacademy.ru/courses" method="post"></form> 
-            <input type="radio" name="grid" value="adaptive" checked>Адаптивная<br>
-            <input type="radio" name="grid" value="fixed">Фиксированная<br>
-            <input type="radio" name="grid" value="rubber">Резиновая<br>
-        </section>
-        <section>
-            <h3>ОСОБЕННОСТИ:</h3>
-            <form action="https://echo.htmlacademy.ru/courses" method="post"></form> 
-            <input type="checkbox" name="feature-1" value="slider" checked>Слайдер<br>
-            <input type="checkbox" name="feature-2" value="block">Блок преимуществ<br>
-            <input type="checkbox" name="feature-3" value="news" checked>Новости<br>
-            <input type="checkbox" name="feature-4" value="gallery">Галерея<br>
-            <input type="checkbox" name="feature-5" value="cart">Корзина<br>
-            <button type="submit">ПОКАЗАТЬ</button>
-        </section>
         <section>
             <h3>Сортировать</h3>
             <a href="">ПО ЦЕНЕ</a>
@@ -112,7 +111,7 @@
         <p>
           <textarea name="letter" id="letter-content" rows="4" cols="62">В свободной форме</textarea>
         </p>
-        <button type="submit" value="ОТПРАВИТЬ">
+        <button type="submit">ОТПРАВИТЬ</button>
       </form>
     </section>
   </body>
